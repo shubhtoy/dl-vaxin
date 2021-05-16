@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from colorlib.com/etc/tb/Table_Responsive_v1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 May 2021 16:24:25 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <title>Delhi Vaccine Tracker</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/static/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="”stylesheet”"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <script src="https://use.fontawesome.com/36b61623ec.js"></script>
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://pagecdn.io/lib/perfect-scrollbar/1.5.0/css/perfect-scrollbar.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    <!--===============================================================================================-->
+    <meta name="robots" content="noindex, follow" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3WWQEN9XC5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3WWQEN9XC5");
+    </script>
+  </head>
+  <body>
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100">
+          <div class="table100">
+            <div class="legend">NA-Not Applicable</div>
+            <table>
+              <thead>
+                <tr class="table100-head">
+                  <th class="column1">Date</th>
+                  <th class="column2">Name</th>
+                  <th class="column3">Address</th>
+                  <th class="column4">Age</th>
+                  <th class="column5">Vaccine</th>
+                  <th class="column6">Available</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%for date in data_keys%} {%for all in data_values[date]%}
+                <tr>
+                  <td class="column1">{{date}}</td>
+                  <td class="column2">{{all["name"]}}</td>
+                  <td class="column3">{{all["address"]}}</td>
+                  <td class="column4">{{all["min_age"]}}</td>
+                  <td class="column5">
+                    {{all["vaccine"]}}_{{all["fee_type"]}}
+                  </td>
+                  {%if all["applicable"]=="Not Applicable"%}
+                  <td class="column6">{{all["available"]}} NA</td>
+                  {%else%}
+                  <td class="column6">{{all["available"]}}</td>
+                  {%endif%}
+                </tr>
+                {%endfor%} {%endfor%}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="static/js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  </body>
+
+  <!-- Mirrored from colorlib.com/etc/tb/Table_Responsive_v1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 May 2021 16:24:30 GMT -->
+</html>

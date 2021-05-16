@@ -1,0 +1,242 @@
+/* Global CSS */
+/* #08e8de */
+body {
+  background-color: #0d1019;
+  animation: fadeInAnimation ease 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  color: #e1e1e1;
+}
+.greet {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  /* letter-spacing: vh; */
+  margin-bottom: 0.2;
+}
+.heading {
+  grid-template-columns: 80% auto;
+  margin-left: 2px;
+}
+.sun {
+  height: 55px;
+  margin-top: 5px;
+  animation: fadeInDown 0.7s;
+}
+.grid_layer {
+  display: inline-grid;
+  margin-top: 2vh;
+}
+.content1 {
+  grid-template-columns: 48% 4% 48%;
+}
+.content2 {
+  grid-template-columns: auto;
+  margin-top: 3%;
+}
+.first_layer {
+  margin-bottom: -1vh !important;
+  grid-template-columns: 65px auto;
+}
+.name_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+}
+.part2 {
+  background-color: #f21e60;
+  box-shadow: 1.5px 3px 3px#f21e6180;
+  animation: fadeInRight 0.7s;
+}
+.part1 {
+  background-color: #face14;
+  box-shadow: 1.5px 3px 3px #fad01480;
+  animation: fadeInLeft 0.7s;
+}
+.part3 {
+  background-color: #8d4de9;
+  box-shadow: 1.5px 3px 3px #8d4de980;
+}
+.part4 {
+  background-color: #2daefd;
+  box-shadow: 1.5px 3px 3px #2daefd80;
+  animation: fadeInRight 0.7s;
+}
+.part5 {
+  background-color: #5fed7e;
+  box-shadow: 1.5px 3px 3px #2d2e2d80;
+  animation: fadeInLeft 0.7s;
+}
+/* .inner { */
+/* margin:10px; */
+.row1 {
+  border: rgba(250, 250, 250, 0.35) 0.01mm;
+  width: 100%;
+  border-style: none none solid none;
+  height: 0;
+  padding-bottom: 80%;
+  /* background-color: ##e71f2c; */
+  /* height:80%; */
+}
+.row2 {
+  display: inline-grid;
+  grid-template-columns: 80% auto;
+}
+.row4 {
+  display: inline-grid;
+  grid-template-columns: 90% auto;
+}
+.row3 {
+  border: rgba(250, 250, 250, 0.35) 0.01mm;
+  width: 100%;
+  border-style: none none solid none;
+  height: 0;
+  padding-bottom: 30%;
+  /* background-color: ##e71f2c; */
+  /* height:80%; */
+}
+.go_img {
+  width: 15px;
+  margin-top: 5px;
+}
+
+.mood_table {
+  width: 100%;
+  overflow: scroll;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300 !important;
+  font-size: 20px;
+}
+.column2 {
+  border-radius: 12px;
+  margin: 1%;
+  width: 100%;
+  /* box-shadow: 2px 3px  #ffffff5b; */
+  display: grid;
+  height: 0;
+  padding-bottom: 103%;
+}
+.column3 {
+  margin: 1%;
+  width: 100%;
+  display: grid;
+  height: 0;
+  box-shadow: 2px 3px #ffffff5b;
+  padding-bottom: 40%;
+  animation: fadeInDown 0.7s;
+  border-radius: 12px;
+}
+
+.inner_grid {
+  display: grid;
+  margin-top: 33%;
+  font-family: "Roboto", sans-serif;
+}
+
+.quote {
+  quotes: "“" "”" "‘" "’";
+
+  font-family: adobe-garamond-pro, serif;
+  font-size: 18px;
+  /* margin-top: 2px; */
+  text-align: center;
+  font-weight: 0;
+  letter-spacing: -0.1px;
+  color: rgb(225, 218, 218);
+  font-style: normal;
+}
+.author {
+  font-family: "Europa", serif;
+  font-size: 13px;
+  color: gray;
+  font-weight: 100;
+  text-align: center;
+  font-style: italic;
+}
+.inner,
+.inner2 {
+  font-family: "Roboto", sans-serif;
+
+  text-align: center;
+  font-weight: 400;
+
+  vertical-align: middle;
+  text-decoration: wavy;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+  color: rgb(248, 242, 242);
+}
+h2 {
+  font-size: 2vh;
+  font-weight: 200;
+  text-align: center;
+  font-family: open sans, sans-serif;
+  display: block;
+  padding-top: 12px;
+  line-height: 1em;
+  /* padding-bottom: 2em; */
+  color: bisque;
+}
+
+h2 a {
+  font-weight: 300;
+  /* text-transform: uppercase; */
+  color: #453886;
+  text-decoration: none;
+}
+.inner {
+  padding-top: 12vw;
+  font-size: 12vw;
+}
+.inner2 {
+  padding-top: 9vw;
+  font-size: 10vw;
+}
+
+/* Mobile Max*/
+@media screen and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 2%;
+  }
+
+  .part4 .inner {
+    font-size: 8vw;
+    padding-top: 9vw;
+  }
+  .part5 .inner {
+    font-size: 9vw;
+    padding-top: 8.5vw;
+  }
+}
+
+/* Tablet onwards */
+@media screen and (min-width: 501px) {
+  .grid-container {
+    display: grid;
+    /* padding: 5%; */
+    width: 411px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inner {
+    font-size: 45px;
+    padding-top: 35%;
+  }
+  .part4 .inner {
+    /* font-size: 16px; */
+    font-size: 40px;
+    padding-top: 20%;
+  }
+  .part5 .inner {
+    /* font-size: 16px; */
+    /* font-size: 9vw; */
+    padding-top: 20%;
+    font-size: 40px;
+  }
+  .inner2 {
+    font-size: 40px;
+    padding-top: 12%;
+  }
+}
