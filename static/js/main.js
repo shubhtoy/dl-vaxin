@@ -1,7 +1,7 @@
 var date=new Date();
 var hours=date.getHours();
 var greet;
-console.log(hours)
+// console.log(hours)
 window.onload=function(){
 if(hours>-1 && hours<=3){
     greet="evening";
@@ -17,7 +17,7 @@ else if(hours>17 && hours<=24){
 }
 document.querySelector(".greet").innerHTML="Good "+greet;
 document.querySelector(".sun").src="https://cdn.jsdelivr.net/gh/shubhtoy/dl-vaxin/static/images/icons/"+greet+'.png';
-console.log("https://cdn.jsdelivr.net/gh/shubhtoy/dl-vaxin/static/images/icons/"+greet+'.png')
+// console.log("https://cdn.jsdelivr.net/gh/shubhtoy/dl-vaxin/static/images/icons/"+greet+'.png')
 };
 fetch("https://type.fit/api/quotes")
 .then(function (response) {
@@ -82,20 +82,3 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
   document.querySelector(".name_title").onclick=function() {
     animateCSS('.name_title', 'headShake');
   };
-//   document.querySelector(".part3").onclick=function() {
-//     document.querySelector('.part3').classList.add('animate__animated','animate__infinite', 'animate__pulse');
-// //     ;
-//   };
-//   document.querySelector(".part4").onclick=function() {
-//     document.querySelector('.part4').classList.add('animate__animated','animate__infinite', 'animate__pulse');
-// //     ;
-//   };
-//   document.querySelector(".part5").onclick=function() {
-//     document.querySelector('.part5').classList.add('animate__animated','animate__infinite', 'animate__pulse');
-// //     ;
-//   };
-//   document.querySelector(".name_title").onclick=function() {
-//     document.querySelector('.name_title').classList.add('animate__animated', 'animate__headShake');
-// //     ;
-//   };
-
