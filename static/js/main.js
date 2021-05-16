@@ -17,7 +17,7 @@ else if(hours>17 && hours<=24){
 }
 document.querySelector(".greet").innerHTML="Good "+greet;
 document.querySelector(".sun").src="https://cdn.jsdelivr.net/gh/shubhtoy/dl-vaxin/static/images/icons/"+greet+'.png';
-
+console.log("https://cdn.jsdelivr.net/gh/shubhtoy/dl-vaxin/static/images/icons/"+greet+'.png')
 };
 fetch("https://type.fit/api/quotes")
 .then(function (response) {
