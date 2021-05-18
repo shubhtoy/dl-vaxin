@@ -15,7 +15,7 @@ keys = []
 def update():
     print("UPDATING....")
     global datas_, keys
-    a = requests.get("https://short.smittal.tech/api")
+    a = requests.get(" https://shubh.tunnelto.dev")
     data = a.json()
     datas_ = data["datas_"]
     keys = data["keys"]

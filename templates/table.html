@@ -60,7 +60,7 @@
       <div class="container-table100">
         <div class="wrap-table100">
           <div class="table100">
-            <div class="legend">NA-Not Applicable</div>
+            <div class="legend">NA-Not Applicable D1-Dose1 D2-Dose2</div>
             <table>
               <thead>
                 <tr class="table100-head">
@@ -83,9 +83,13 @@
                     {{all["vaccine"]}}_{{all["fee_type"]}}
                   </td>
                   {%if all["applicable"]=="Not Applicable"%}
-                  <td class="column6">{{all["available"]}} NA</td>
+                  <td class="column6">
+                    {{all["available"]}} D1:{all["dose1"]} D2:{all["dose2"]} NA
+                  </td>
                   {%else%}
-                  <td class="column6">{{all["available"]}}</td>
+                  <td class="column6">
+                    {{all["available"]}} D1:{all["dose1"]} D2:{all["dose2"]}
+                  </td>
                   {%endif%}
                 </tr>
                 {%endfor%} {%endfor%}
