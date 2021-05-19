@@ -15,7 +15,7 @@ keys = []
 def update():
     print("UPDATING....")
     global datas_, keys
-    a = requests.get(" https://shubh.tunnelto.dev")
+    a = requests.get(" short.smittal.tech/dev")
     data = a.json()
     datas_ = data["datas_"]
     keys = data["keys"]
@@ -31,10 +31,7 @@ app = Flask(__name__)
 
 @app.after_request
 def add_header(response):
-    """
-    Add headers to both force latest IE rendering engine or Chrome Frame,
-    and also to cache the rendered page for 10 minutes.
-    """
+
     response.headers["X-UA-Compatible"] = "IE=Edge,chrome=1"
     response.headers["Cache-Control"] = "no-cache,no-store"
     return response
